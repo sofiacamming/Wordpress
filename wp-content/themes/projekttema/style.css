@@ -1,0 +1,198 @@
+/* Theme name: projekttema */
+
+body {
+	background-color: #fff;
+
+}
+
+header {
+	margin: 50px auto 50px auto;
+	overflow: hidden;
+	min-width: 100%;
+	border-bottom: 4px solid #ddd;
+}
+
+main {
+	width: 960px;
+	margin: auto;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover {
+	color: pink;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
+}
+
+h1 {
+	margin: 0px 0px 0px 235px;
+	text-transform: uppercase;
+	font-family: 'Merriweather', serif;
+	font-weight: 300;
+}
+
+h1, h2 {
+	padding: 50px 0px 50px 0px;
+	float: left;
+}
+
+h2 {
+	text-transform: lowercase;
+	font-size: 30px;
+	margin: 0px 0px 0px 20px;
+	color: pink;
+	font-family: 'Dancing Script', cursive;
+}
+
+p {
+	font-family: sans-serif;
+}
+
+#fixedtop {
+	min-width: 100%;
+	background-color: #eee;
+	height: 40px;
+	position: fixed;
+	top:0;
+	z-index: 9999;
+	border-bottom: #fff 6px dotted;
+}
+
+#fixedtoptext {
+	width: 960px;
+	margin: 0 auto 0 auto;
+	overflow: hidden;
+}
+
+#fixedtop p {
+	font-family: 'Merriweather', serif;
+	font-weight: 600;
+	margin: 12px 25px 5px 0;
+	text-transform: uppercase;
+	color: #ccc;
+	float: left;
+}
+
+nav, #logga {
+	width: 960px;
+	margin: auto;
+}
+
+nav ul#toppmeny {
+	overflow: hidden;
+	clear: left;
+	padding: 0px;
+	padding-left: 60px;
+}
+
+nav ul#toppmeny li {
+	float: left;
+	margin-right: 40px;
+	text-transform: uppercase;
+}
+
+nav ul#toppmeny li#rea a {
+	color: #ddd;
+	font-weight: 600;
+}
+
+nav ul#toppmeny li#rea a:hover {
+	color: pink;
+}
+
+div#firstblock {
+	width: 100%;
+	background-color: #ddd;
+	height: 390px;
+	overflow: hidden;
+	background-image: url("img/vs3.png");
+	opacity: 0.7;
+}
+
+div#reatext {
+	float: left;
+	width: 200px;
+	height: 200px;
+	text-transform: uppercase;
+	margin: 100px 45px 45px 75px;
+	border: 8px #fff double;
+	background: rgba(255, 255, 255, 0.5);
+	border-radius: 50%;
+}
+
+div#reatext p {
+	color: #fff;
+	text-align: center;
+	font-size: 50px;
+	margin-top: 70px;
+	font-family: 'Merriweather', serif;
+	font-weight: 300;
+}
+
+div#reatext p a {
+	color: #fff;
+}
+
+div#blockwrapper {
+	margin: 50px 0 50px 0;
+	width: 100%;
+	overflow: hidden;
+}
+
+div#block1, div#block2 {
+	width: 47%;
+}
+
+div#block1 {
+	height: 265px;
+	float: left;
+}
+
+div#block1 p#blocktext {
+	color: #000;
+}
+
+div#block1 p#blocktext, div#block2 p#blocktext2 {
+	margin: 55px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 25px;
+	font-weight: 400;
+	font-family: 'Quicksand', sans-serif;
+}
+
+div#block2 {
+	height: 249px;
+	float: right;
+	background-color: fff;
+	border: #f957a8 8px double;
+}
+
+div#block2 p#blocktext2 {
+	color: pink;
+}
+
+footer {
+	margin-top: 50px;
+	height: 200px;
+	min-width: 100%;
+	background-color: #ddd;
+	border-top: #fff 6px dotted;
+}
+
+footer p {
+	display: block;
+	width: 960px;
+	margin: 50px auto 0 auto;
+}
