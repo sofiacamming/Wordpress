@@ -31,7 +31,7 @@
 					</form>
 				</div>
 				-->
-
+				
 				<div id="fixedtopicons">
 					<img id="searchicon" src="<?php echo get_template_directory_uri() ?>/img/searchicon.png" onclick="search()">
 					<a href=""><img src="<?php echo get_template_directory_uri() ?>/img/carticon.png"></a>
@@ -48,12 +48,12 @@
 		</div>
 		<nav class="toppnav">
 			<ul id="toppmeny">
-				<li> <a href="<?php echo get_template_directory_uri() ?>/shop.php"> Dofter </a> </li> 
-				<li> <a href="<?php echo get_template_directory_uri() ?>/shop.php"> Lotion </a> </li>
-				<li> <a href="<?php echo get_template_directory_uri() ?>/shop.php"> Hårvård </a> </li>
-				<li> <a href="<?php echo get_template_directory_uri() ?>/shop.php"> Accessoarer & researtiklar </a> </li>
-				<li> <a href="<?php echo get_template_directory_uri() ?>/shop.php"> Presentartiklar </a> </li>
-				<li id="rea"> <a href="<?php echo get_template_directory_uri() ?>/shop.php"> Rea </a> </li>
+				<li> <a href=""> Dofter </a> </li> 
+				<li> <a href=""> Lotion </a> </li>
+				<li> <a href=""> Hårvård </a> </li>
+				<li> <a href=""> Accessoarer & researtiklar </a> </li>
+				<li> <a href=""> Presentartiklar </a> </li>
+				<li id="rea"> <a href=""> Rea </a> </li>
 			</ul>
 		</nav>
 	</header>
@@ -61,19 +61,7 @@
 		<aside>
 		</aside>
 		<main>
-			<div id="firstblock">
-				<div id="reatext">
-					<p> <a href="">REA</a> </p>
-				</div>
-			</div>
-			<div id="blockwrapper">
-				<div id="block1">
-					<p id="blocktext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-				</div>
-				<div id="block2">
-					<p id="blocktext2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-				</div>
-			</div>
+			innehåll
 		</main>
 	</body>
 	<footer>
@@ -114,4 +102,3 @@
 		</div>
 	</footer>
 </html>
-

@@ -6,7 +6,7 @@ body {
 }
 
 header {
-	margin: 50px auto 50px auto;
+	margin: 50px auto 25px auto;
 	overflow: hidden;
 	min-width: 100%;
 	border-bottom: 4px solid #ddd;
@@ -15,6 +15,7 @@ header {
 main {
 	width: 960px;
 	margin: auto;
+	overflow: hidden;
 }
 
 a {
@@ -69,10 +70,14 @@ p {
 	border-bottom: #fff 6px dotted;
 }
 
-#fixedtoptext {
+#fixedtopdiv {
 	width: 960px;
 	margin: 0 auto 0 auto;
 	overflow: hidden;
+}
+
+#fixedtoptext {
+	float: left;
 }
 
 #fixedtop p {
@@ -80,34 +85,86 @@ p {
 	font-weight: 600;
 	margin: 12px 25px 5px 0;
 	text-transform: uppercase;
-	color: #ccc;
+	color: #999;
 	float: left;
 }
 
-nav, #logga {
+#fixedtopicons {
+	float: right;
+}
+
+#fixedtopicons img {
+	height: 20px;
+	margin-top: 10px;
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+/*
+#fixedtopsearch {
+	float: left;
+	margin-top: 10px;
+	margin-left: 380px;
+}
+
+#fixedtopsearch input {
+	border: none;
+	height: 20px;
+	padding-left:5px;
+}
+*/
+
+#searchtop {
+	background-color: #fff;
+	position: fixed;
+	top: 60px;
+	left: auto;
+	z-index: 9998;
+	width: 100%;
+	display:none;
+}
+
+#searchtop div#content {
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+}
+
+input #searchinput {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	height: 20px;
+	border: solid 4px #ddd;
+	background-color: #eee;
+	padding: 4px;
+}
+
+nav.toppnav, #logga {
 	width: 960px;
 	margin: auto;
 }
 
-nav ul#toppmeny {
+nav.toppnav ul#toppmeny {
 	overflow: hidden;
 	clear: left;
 	padding: 0px;
 	padding-left: 60px;
 }
 
-nav ul#toppmeny li {
+nav.toppnav ul#toppmeny li {
 	float: left;
 	margin-right: 40px;
 	text-transform: uppercase;
 }
 
-nav ul#toppmeny li#rea a {
-	color: #ddd;
+nav.toppnav ul#toppmeny li#rea a {
+	color: #999;
 	font-weight: 600;
 }
 
-nav ul#toppmeny li#rea a:hover {
+nav.toppnav ul#toppmeny li#rea a:hover {
 	color: pink;
 }
 
@@ -118,6 +175,7 @@ div#firstblock {
 	overflow: hidden;
 	background-image: url("img/vs3.png");
 	opacity: 0.7;
+	margin-top: 50px;
 }
 
 div#reatext {
@@ -175,7 +233,7 @@ div#block1 p#blocktext, div#block2 p#blocktext2 {
 div#block2 {
 	height: 249px;
 	float: right;
-	background-color: fff;
+	background-color: #fff;
 	border: #f957a8 8px double;
 }
 
@@ -185,14 +243,69 @@ div#block2 p#blocktext2 {
 
 footer {
 	margin-top: 50px;
-	height: 200px;
 	min-width: 100%;
 	background-color: #ddd;
 	border-top: #fff 6px dotted;
+	height: 300px;
+	
 }
 
-footer p {
-	display: block;
+footer div.footerwrapper {
 	width: 960px;
-	margin: 50px auto 0 auto;
-} 
+	margin: 40px auto 0 auto;
+	overflow: hidden;
+}
+
+footer div.footerdivservice, div.footerdivfollow {
+	float: right; 
+}
+
+footer div.footerdivinfo {
+	float: left;
+}
+
+div.footerdivfollow {
+	margin-right: 150px;
+}
+
+div.footerdivfollow ul li img {
+	height: 20px;
+	margin-right: 8px;
+}
+
+h3 {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 25px;
+	margin: 0 0 5px 0;
+	padding:0;
+	color: #666;
+}
+
+.footerdivservice p, .footerdivinfo li {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #999;
+	font-size: 16px;
+	margin: 5px 0 0 0;
+	padding: 0;
+}
+
+.footerdivservice p#nummer {
+	font-size: 22px;
+}
+
+footer a {
+	color: #999;
+}
+
+footer a:hover {
+	color: #666;
+}
+
+footer ul , footer li {
+	margin:0;
+	padding:0;
+}
