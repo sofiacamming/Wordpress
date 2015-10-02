@@ -43,7 +43,7 @@
 				<input type="text" name="search" id="searchinput" required="true" value="" placeholder="SÖK PRODUKT" />
 			</form>
 		</div>
-		<div id="logga">
+		<div id="logga"> hej
 			<h1> <a href=""> Victoria's Secret </a></h1> <h2> Beauty </h2>
 		</div>
 		<nav class="toppnav">
