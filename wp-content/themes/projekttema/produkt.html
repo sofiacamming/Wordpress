@@ -8,7 +8,7 @@
 		<meta charset="utf-8" />
 
 		<!-- CSS & Javascript -->
-		<link href="<?php echo get_template_directory_uri() ?>/style.css" rel="stylesheet" type="text/css">
+		<link href="style.css" rel="stylesheet" type="text/css">
 		<link href="<?php echo get_template_directory_uri() ?>/js/javascript.js" rel="javascript" type="javascript">
 
 		<!-- Typsnitt -->
@@ -21,7 +21,9 @@
 		<div id="fixedtop">
 			<div id="fixedtopdiv">
 				<div id="fixedtoptext">
-					<p>Victoria's secret</p> <p> | </p> <p> Beauty</p>
+					<a href="<?php echo get_template_directory_uri() ?>/index.html">
+						<p>Victoria's secret</p> <p> | </p> <p> Beauty</p>
+					</a>
 				</div>
 
 				<!--
@@ -44,16 +46,16 @@
 			</form>
 		</div>
 		<div id="logga">
-			<h1> <a href=""> Victoria's Secret </a></h1> <h2> Beauty </h2>
+			<h1> <a href="<?php echo get_template_directory_uri() ?>/index.html"> Victoria's Secret </a></h1> <h2> Beauty </h2>
 		</div>
 		<nav class="toppnav">
 			<ul id="toppmeny">
-				<li> <a href=""> Dofter </a> </li> 
-				<li> <a href=""> Lotion </a> </li>
-				<li> <a href=""> Hårvård </a> </li>
-				<li> <a href=""> Accessoarer & researtiklar </a> </li>
-				<li> <a href=""> Presentartiklar </a> </li>
-				<li id="rea"> <a href=""> Rea </a> </li>
+				<li> <a href="<?php echo get_template_directory_uri() ?>/shop.html"> Dofter </a> </li> 
+				<li> <a href="<?php echo get_template_directory_uri() ?>/shop.html"> Lotion </a> </li>
+				<li> <a href="<?php echo get_template_directory_uri() ?>/shop.html"> Hårvård </a> </li>
+				<li> <a href="<?php echo get_template_directory_uri() ?>/shop.html"> Accessoarer & researtiklar </a> </li>
+				<li> <a href="<?php echo get_template_directory_uri() ?>/shop.html"> Presentartiklar </a> </li>
+				<li id="rea"> <a href="<?php echo get_template_directory_uri() ?>/shop.html"> Rea </a> </li>
 			</ul>
 		</nav>
 	</header>
@@ -61,7 +63,24 @@
 		<aside>
 		</aside>
 		<main>
-			innehåll
+			<div id="produkt">
+				<div id="leftdiv">
+					<img src="img/bodymist-mango-temptation.png">
+				</div>
+				<div id="rightdiv">
+					<h3>Mango Temptation</h3>
+					<p id="pris">250kr</p>
+					<p id="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+					<button>Köp</button>
+				</div>
+			</div>
+			<div id="recommended">
+				<h4>Andra har också köpt</h4>
+				<a href="<?php echo get_template_directory_uri() ?>/produkt.php"><img src="img/bodymist-mango-temptation.png"></a>
+				<a href="<?php echo get_template_directory_uri() ?>/produkt.php"><img src="img/bodymist-aqua-kiss.jpg"></a>
+				<a href="<?php echo get_template_directory_uri() ?>/produkt.php"><img src="img/bodymist-passion-struck.jpg"></a>
+				<a href="<?php echo get_template_directory_uri() ?>/produkt.php"><img src="img/bodymist-love-spell.jpg"></a>
+			</div>
 		</main>
 	</body>
 	<footer>
@@ -102,4 +121,3 @@
 		</div>
 	</footer>
 </html>
-
