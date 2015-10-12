@@ -9,4 +9,3 @@ function search() {
 		searchtop.style.display = "none";
 	}
 }
-

@@ -44,7 +44,7 @@ h1 a:hover {
 }
 
 h1, h2 {
-	padding: 50px 0px 50px 0px;
+	padding: 70px 0px 50px 0px;
 	float: left;
 }
 
@@ -136,16 +136,10 @@ p {
 	left: auto;
 	z-index: 9998;
 	width: 100%;
-	display:none;
+	display: block;
 }
 
-#searchtop div#content {
-	margin-left: auto;
-	margin-right: auto;
-	width: 960px;
-}
-
-input #searchinput {
+#searchinput {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -154,6 +148,10 @@ input #searchinput {
 	border: solid 4px #ddd;
 	background-color: #eee;
 	padding: 4px;
+}
+
+#logga {
+	overflow: hidden;
 }
 
 nav.toppnav, #logga {

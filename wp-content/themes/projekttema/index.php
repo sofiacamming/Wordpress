@@ -42,8 +42,9 @@
 		</div>
 		<div id="searchtop">
 			<form>
-				<input type="text" name="search" id="searchinput" required="true" value="" placeholder="SÖK PRODUKT" />
+				<input type="text" id="searchinput" required="true" value="" placeholder="SÖK PRODUKT">
 			</form>
+			<div id="livesearch"></div>
 		</div>
 		<div id="logga">
 			<h1> <a href="<?php echo get_template_directory_uri() ?>/index.html"> Victoria's Secret </a></h1> <h2> Beauty </h2>
