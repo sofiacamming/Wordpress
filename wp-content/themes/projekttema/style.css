@@ -23,6 +23,7 @@ a {
 	color: #000;
 }
 
+
 ul {
 	list-style-type: none;
 }
@@ -30,30 +31,6 @@ ul {
 li {
 	font-family: 'Quicksand', sans-serif;
 	font-weight: 400;
-}
-
-h1 {
-	margin: 0px 0px 0px 245px;
-	text-transform: uppercase;
-	font-family: 'Merriweather', serif;
-	font-weight: 300;
-}
-
-h1 a:hover {
-	color: pink;
-}
-
-h1, h2 {
-	padding: 70px 0px 50px 0px;
-	float: left;
-}
-
-h2 {
-	text-transform: lowercase;
-	font-size: 30px;
-	margin: 0px 0px 0px 20px;
-	color: pink;
-	font-family: 'Dancing Script', cursive;
 }
 
 h3 {
@@ -74,6 +51,9 @@ h4 {
 p {
 	font-family: sans-serif;
 }
+
+
+/* HEADER */ 
 
 #fixedtop {
 	min-width: 100%;
@@ -154,6 +134,30 @@ p {
 	overflow: hidden;
 }
 
+h1 {
+	margin: 0px 0px 0px 245px;
+	text-transform: uppercase;
+	font-family: 'Merriweather', serif;
+	font-weight: 300;
+}
+
+h1 a:hover {
+	color: pink;
+}
+
+h1, h2 {
+	padding: 70px 0px 50px 0px;
+	float: left;
+}
+
+h2 {
+	text-transform: lowercase;
+	font-size: 30px;
+	margin: 0px 0px 0px 20px;
+	color: pink;
+	font-family: 'Dancing Script', cursive;
+}
+
 nav.toppnav, #logga {
 	width: 960px;
 	margin: auto;
@@ -168,18 +172,20 @@ nav.toppnav ul#toppmeny {
 
 nav.toppnav ul#toppmeny li {
 	float: left;
-	margin-right: 40px;
+	margin-right: 67px;
 	text-transform: uppercase;
 }
 
-nav.toppnav ul#toppmeny li#rea a {
+nav.toppnav ul#toppmeny li.rea a {
 	color: #999;
 	font-weight: 600;
 }
 
-nav.toppnav ul#toppmeny li#rea a:hover {
+nav.toppnav ul#toppmeny li.rea a:hover {
 	color: pink;
 }
+
+/* FRONT-PAGE */
 
 main {
 	margin-top: 50px;
@@ -259,6 +265,8 @@ div#block2 p#blocktext2 {
 	margin: 55px;
 }
 
+/* FOOTER */
+
 footer {
 	margin-top: 50px;
 	min-width: 100%;
@@ -331,41 +339,133 @@ footer ul , footer li {
 
 /* SHOP */
 
-#produkterwrapper {
-	overflow: hidden;
-	padding: 0 20px 0 20px;
+#container {
+	width: 960px;
+	margin: auto;
 }
 
-#produkterblock {
+div#content {
+	overflow: hidden;
+}
+
+h1.page-title, p.woocommerce-result-count, nav.woocommerce-breadcrumb, div.term-description {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 600;
+}
+
+div.term-description {
+	display: none;
+}
+
+h1.page-title {
+	width: 100%;
+	margin: 10px 0 10px 0;
+	padding: 0;
+	text-align: center;
+	color: #666;
+}
+
+p.woocommerce-result-count, form.woocommerce-ordering {
+	float: right;
+	margin: 5px 0 5px 0;
+	clear: right;
+}
+
+ul.products {
+	overflow: hidden;
+	padding: 0px 20px 0 20px;
+	margin-top: 60px;
+	float: right;
+}
+
+/* .produkterwrapper {
+	overflow: hidden;
+	padding: 0px 20px 0 20px;
+} */
+
+/*.produkterblock {
 	width: 200px;
 	height: 260px;
 	float: left;
 	margin-right: 33px;
 	margin-bottom: 33px;
 	border-bottom: solid 4px #eee;
+} */
+
+ul.products li {
+	width: 200px;
+	height: 290px;
+	float: left;
+	margin-right: 40px;
+	margin-bottom: 33px;
+	border-bottom: solid 4px #eee;
+	position: relative;
 }
 
-#produkterblock:nth-child(4n) {
+/*.produkterblock:nth-child(4n),*/ ul.products li:nth-child(4n) {
 	margin-right:0;
 }
 
-#produkterblock:hover {
+/*.produkterblock:hover,*/ ul.products li:hover {
 	border-bottom: solid 4px pink;
 }
 
-#produkterblock img {
+/*.produkterblock img {
 	width: 180px;
 	margin-left: 10px;
+} */
+
+ul.products img {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: 0;
+	left:0;
 }
 
-#produkterblock p {
+ul.products h3 {
+	text-transform: uppercase;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 600;
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	position: absolute;
+	top:210px;
+	left:0;
+}
+
+/*.produkterblock p {
 	font-family: 'Quicksand', sans-serif;
 	font-weight: 400;
 	margin:0;
 	padding:0;
+} */
+
+ul.products .price {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
+	margin:0;
+	padding:0;
+	position: absolute;
+	top:230px;
+	left:0;
 }
 
-#produkterblock button {
+ul.products .add_to_cart_button {
+	border: none;
+	background-color: white;
+	text-transform: uppercase;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 14px;
+	cursor: pointer;
+	color: #666;
+	position: absolute;
+	top: 256px;
+	left:50px;
+}
+
+/*.produkterblock button {
 	margin-left: 130px;
 	border: none;
 	background-color: white;
@@ -374,20 +474,148 @@ footer ul , footer li {
 	cursor: pointer;
 	padding: 5px;
 	color: #666;
-}
+} */
+
+
 
 /* PRODUKT */
 
-#produkt {
+/* #produkt {
 	overflow: hidden;
 }
 
 #produkt #leftdiv {
 	float: left;
 	width: 50%;
+} */
+
+div.summary, div.images {
+	margin-top: 60px;
 }
 
-#leftdiv img {
+div.images {
+	width: 50%;
+	float: left;
+}
+
+div.images img {
+	width: 480px;
+	height: 480px;
+}
+
+div.summary, div.woocommerce-tabs {
+	float: left;
+	width: 50%;
+}
+
+div.related {
+	float: left;
+}
+
+div.summary h1 {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 25px;
+	margin: 0;
+	padding:0;
+	color: #666;
+	width: 100%;
+}
+
+div.summary p.price {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	margin:0;
+	padding:0;
+	color: black;
+}
+
+div.summary p {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	margin:0 0 20px 0;
+	padding:0;
+	color:#666;
+}
+
+div.summary .product_meta {
+	display: none;
+}
+
+div.summary form.cart {
+	overflow: hidden;
+}
+
+div.summary form.cart input {
+	width: 35%;
+	height: 20px;
+	float: left;
+}
+
+div.summary form.cart button {
+	border: none;
+	color: white;
+	background-color: pink;
+	width: 60%;
+	height: 27px;
+	text-transform: uppercase;
+	margin-top: 0px;
+	cursor: pointer;
+	font-weight: 600;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 16px;
+	float: right;
+}
+
+div.summary form.cart button:hover {
+	border: solid 4px #fba6ca;
+}
+
+div.woocommerce-tabs ul.tabs {
+	display: none;
+}
+
+div.woocommerce-tabs h2 {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 18px;
+	margin: 10px 0 5px 0;
+	padding:0;
+	color: #666;
+	width: 100%;
+}
+
+div.woocommerce-tabs p {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
+	margin: 20px 0 0 0;
+	padding:0;
+}
+
+div.related {
+	margin-top: 60px;
+}
+
+div.related h2 {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 18px;
+	margin: 10px 0 5px 0;
+	padding:0;
+	color: #666;
+	width: 100%;
+}
+
+div.related .products {
+	margin-top: 20px;
+}
+
+/* #leftdiv img {
 	width: 100%;
 }
 
@@ -439,4 +667,4 @@ footer ul , footer li {
 	margin-right: 10px;
 	margin-top: 20px;
 }
-
+ */
