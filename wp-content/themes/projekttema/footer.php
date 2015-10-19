@@ -23,15 +23,19 @@
 					<li><a href="https://www.pinterest.com/victoriassecret/" target="_blank"><img src="<?php echo get_template_directory_uri() ?>/img/pinterest.png">pinterest</a></li>
 				</ul>
 			</div>
-			<div class="footerdivinfo">
+			<nav class="footerdivinfo">
 				<h3>
 					Info
 				</h3>
-				<ul>
+				<!-- <ul id="footermeny">
 					<li><a href="">Allmänna villkor</a></li>
 					<li><a href="">Integritetspolicy</a></li>
 					<li><a href="">Ångerrätt, retur & byte</a></li>
-				</ul>
+				</ul> -->
+
+				<?php wp_nav_menu( array( 'theme_location' => 'footer_menu', 'container_class' => 'footerdivinfo', 'menu_id' => 'footermeny', 'container' => 'nav' ) ); ?>
+
+
 			</div>
 		</div>
 	</footer>

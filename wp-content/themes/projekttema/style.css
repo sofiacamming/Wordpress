@@ -286,7 +286,7 @@ footer div.footerdivservice, div.footerdivfollow {
 	float: right; 
 }
 
-footer div.footerdivinfo {
+footer nav.footerdivinfo {
 	float: left;
 }
 
@@ -613,6 +613,10 @@ div.related h2 {
 
 div.related .products {
 	margin-top: 20px;
+}
+
+div#reviews {
+	display: none;
 }
 
 /* #leftdiv img {

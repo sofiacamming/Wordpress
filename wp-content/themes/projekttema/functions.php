@@ -1,18 +1,17 @@
 <?php
 
 /* Our custom post types */
-function register_sociallinks_post_type () {
-	register_post_type ('sociallinks', array(
-		'label' => 'SocialLinks', 
-		'public' => false,
+function register_contact_post_type () {
+	register_post_type ('contact', array(
+		'label' => 'Contact', 
+		'public' => true,
 		'hierarchical' => false,
-		'supports' => array('title', 'thumbnail'),
-		'show_ui' => true,
-		/*'add_metabox' =>,*/
+		'has_archive' => false,
+		'supports' => array('title', 'thumbnail')
 	));
 
 }
-add_action('init', 'register_sociallinks_post_type');
+add_action('init', 'register_contact_post_type');
 
 
 /* Menyer */
@@ -23,5 +22,6 @@ function projekttema_navmenu() {
 	));
 }
 add_action('init', 'projekttema_navmenu');
+
 
 ?>
