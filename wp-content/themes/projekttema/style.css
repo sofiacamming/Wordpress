@@ -84,11 +84,11 @@ p {
 	float: left;
 }
 
-#fixedtopicons {
+.fixedtopicons {
 	float: right;
 }
 
-#fixedtopicons img {
+.fixedtopicons img {
 	height: 20px;
 	margin-top: 10px;
 	margin-left: 20px;
@@ -116,7 +116,7 @@ p {
 	left: auto;
 	z-index: 9998;
 	width: 100%;
-	display: block;
+	display: none;
 }
 
 #searchinput {
@@ -615,10 +615,6 @@ div.related .products {
 	margin-top: 20px;
 }
 
-div#reviews {
-	display: none;
-}
-
 /* #leftdiv img {
 	width: 100%;
 }
@@ -672,3 +668,67 @@ div#reviews {
 	margin-top: 20px;
 }
  */
+
+
+/* Part main sidorna */
+
+article {
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	overflow: hidden;
+}
+
+article h2 {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 22px;
+	margin: 10px 0 10px 0;
+	padding:0;
+	width: 100%;
+}
+
+article h2 a {
+	color: #666;
+}
+
+article p {
+	width: 100%;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
+}
+
+/* Contacts */
+
+ul#contacts {
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	overflow: hidden;
+}
+
+ul#contacts li {
+	width: 320px;
+	float: left;
+}
+
+ul#contacts h2 {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 22px;
+	margin: 10px 0 10px 0;
+	padding:0;
+	width: 100%;
+}
+
+ul#contacts h2 a {
+	color: #666;
+}
+
+ul#contacts p {
+	width: 100%;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
+}

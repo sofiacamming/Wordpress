@@ -1,0 +1,1 @@
+den här filen ska visa sökresultatet som JSON

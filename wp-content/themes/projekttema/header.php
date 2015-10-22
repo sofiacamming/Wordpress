@@ -7,8 +7,8 @@
 		<meta charset="utf-8" />
 
 		<!-- CSS & Javascript -->
-		<link href="<?php echo get_template_directory_uri() ?>/style.css" rel="stylesheet" type="text/css">
-		<link href="<?php echo get_template_directory_uri() ?>/js/javascript.js" rel="javascript" type="javascript">
+		<link href="<?php echo get_template_directory_uri() ?>/style.css" rel="stylesheet" type="text/css" />
+		
 
 		<!-- Typsnitt -->
 		<link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
@@ -20,22 +20,13 @@
 		<div id="fixedtop">
 			<div id="fixedtopdiv">
 				<div id="fixedtoptext">
-					<a href="<?php echo get_template_directory_uri() ?>/front-page.php">
+					<a href="<?php echo get_template_directory_uri() ?>/wordpress">
 						<p>Victoria's secret</p> <p> | </p> <p> Beauty</p>
 					</a>
 				</div>
-
-				<!--
-				<div id="fixedtopsearch">
-					<form>
-						<input type="text" name="search" id="searchform" required="true" value="" placeholder="SÖK PRODUKT" />
-					</form>
-				</div>
-				-->
-
-				<div id="fixedtopicons">
+				<div class="fixedtopicons">
 					<img id="searchicon" src="<?php echo get_template_directory_uri() ?>/img/searchicon.png" onclick="search()">
-					<a href=""><img src="<?php echo get_template_directory_uri() ?>/img/carticon.png"></a>
+					<a id="carticon" href=""><img src="<?php echo get_template_directory_uri() ?>/img/carticon.png"></a>
 				</div>
 			</div>
 		</div>
@@ -46,7 +37,7 @@
 			<div id="livesearch"></div>
 		</div>
 		<div id="logga">
-			<h1> <a href="<?php echo get_template_directory_uri() ?>/front-page.php"> Victoria's Secret </a></h1> <h2> Beauty </h2>
+			<h1> <a href="<?php echo get_template_directory_uri() ?>/wordpress"> Victoria's Secret </a></h1> <h2> Beauty </h2>
 		</div>
 		<!--
 		<nav class="toppnav">
