@@ -8,6 +8,7 @@
 
 		<!-- CSS & Javascript -->
 		<link href="<?php echo get_template_directory_uri() ?>/style.css" rel="stylesheet" type="text/css" />
+		<?php wp_head() ?>
 		
 
 		<!-- Typsnitt -->
@@ -20,24 +21,24 @@
 		<div id="fixedtop">
 			<div id="fixedtopdiv">
 				<div id="fixedtoptext">
-					<a href="<?php echo get_template_directory_uri() ?>/wordpress">
+					<a href="http://localhost/wordpress">
 						<p>Victoria's secret</p> <p> | </p> <p> Beauty</p>
 					</a>
 				</div>
 				<div class="fixedtopicons">
 					<img id="searchicon" src="<?php echo get_template_directory_uri() ?>/img/searchicon.png" onclick="search()">
-					<a id="carticon" href=""><img src="<?php echo get_template_directory_uri() ?>/img/carticon.png"></a>
+					<a id="carticon" href="http://localhost//wordpress//cart"><img src="<?php echo get_template_directory_uri() ?>/img/carticon.png"></a>
 				</div>
 			</div>
 		</div>
 		<div id="searchtop">
-			<form>
-				<input type="text" id="searchinput" required="true" value="" placeholder="SÖK PRODUKT">
+			<form id="searchform">
+				<input type="text" id="searchinput" class="ruta" required="true" value="" placeholder="SÖK PRODUKT"></input>
 			</form>
-			<div id="livesearch"></div>
+			<div id="result"></div>
 		</div>
 		<div id="logga">
-			<h1> <a href="<?php echo get_template_directory_uri() ?>/wordpress"> Victoria's Secret </a></h1> <h2> Beauty </h2>
+			<h1> <a href="http://localhost//wordpress"> Victoria's Secret </a></h1> <h2> Beauty </h2>
 		</div>
 		<!--
 		<nav class="toppnav">

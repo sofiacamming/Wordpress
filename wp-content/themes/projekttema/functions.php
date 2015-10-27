@@ -124,9 +124,13 @@ function projekttema_navmenu() {
 add_action('init', 'projekttema_navmenu');
 
 
-/*
-Override wc
-add_filter( 'woocommerce_enqueue_styles', 'div.term-description' => '' ); */
+
+/* OVERRIDE WC
+add_filter( 'woocommerce_enqueue_styles', '__return_false' );*/
+
+
+/*  Override wc */
+/*add_filter( 'woocommerce_enqueue_styles', 'div.term-description' => '' );*/
 
 
 ?>

@@ -8,7 +8,7 @@
 				<p>
 					Dygnet runt
 					<br />
-					<a href="">kundservice@victoriassecret.se</a>
+					<a href="">kundservice@vsbeauty.se</a>
 				</p>
 			</div>
 			<div class="footerdivfollow">

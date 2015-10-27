@@ -4,37 +4,25 @@ var searchtop = document.getElementById("searchtop");
 function search() {
 	if (searchtop.style.display == "none") {
 		searchtop.style.display = "block";
+		searchtop.getElementsByTagName("input")[0].focus();
 	}
 	else {
 		searchtop.style.display = "none";
 	}
 }
 
+window.onload=function(){
+var form = document.getElementById('searchform');
+form.onsubmit=function( e ){
+	//e.stop();
+	e.preventDefault();
+	jQuery.ajax('http://localhost/wordpress?s='+document.getElementById('searchinput').value,{
+		complete: function( res ) {
 
-function ajaxRequest(url, callback) {
-    var XHR = null;
-    
-    if (XMLHttpRequest) {
-        XHR = new XMLHttpRequest();
-    } 
-
-    else {
-        XHR = new ActiveXObject("Microsoft.XMLHTTP"); 
-    }
-
-    XHR.onreadystatechange = function () {
-        if (XHR.readyState == 4 || XHR.readyState == "complete") {
-            if (XHR.status == 200) {
-                callback(XHR); 
-            } 
-
-            else {
-                alert("fel på servern");
-            }
-            
-        }
-    }
-
-    XHR.open("GET", url, true);
-    XHR.send(null);
+			var placeholder=document.getElementById('result');
+			placeholder.innerHTML="";
+			placeholder.innerHTML=res.responseText;
+		}
+	});
+}
 }

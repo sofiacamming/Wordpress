@@ -1,6 +1,7 @@
 <?php get_header() ?>
 
 		<main>
+			<div class="allt">
 			<div id="textline">Fri frakt vid köp över 200kr</div>
 			<div id="firstblock">
 			</div>
@@ -12,6 +13,7 @@
 					<p id="blocktext2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
 				</div>
 			</div>
+		</div>
 		</main>
 
 <?php get_footer() ?>
